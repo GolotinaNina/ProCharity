@@ -111,6 +111,23 @@ module.exports = {
             inject: 'body'
         }),
         new CleanWebpackPlugin(),
+<<<<<<< Updated upstream
         new MiniCssExtractPlugin()
     ]
 }
+=======
+        new MiniCssExtractPlugin(),
+    ],
+};
+
+        new HtmlWebpackPlugin({
+    filename: 'evaluation-of-the-funds-work.html',
+    template: './src/evaluation-of-the-funds-work.html',
+    inject: 'body'
+}),
+    new HtmlWebpackPlugin({
+    filename: 'evaluation-of-the-funds-work-labor-costs.html',
+    template: './src/evaluation-of-the-funds-work-labor-costs.html',
+    inject: 'body'
+});
+>>>>>>> Stashed changes

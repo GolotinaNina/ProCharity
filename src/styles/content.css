@@ -69,6 +69,7 @@
 @import url(../blocks/sidebar-nav/__step/sidebar-nav__step.css);
 @import url(../blocks/sidebar-nav/__step/_type/sidebar-nav__step_type_reg.css);
 @import url(../blocks/sidebar-nav/__step/_style/sidebar-nav__step_style_lk.css);
+
 @import url(../blocks/sidebar-nav/__step/_type/sidebar-nav__step_type_current.css);
 
 
