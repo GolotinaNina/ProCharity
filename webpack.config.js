@@ -14,6 +14,7 @@ module.exports = {
         filename: '[name].js',
         publicPath: '',
     },
+<<<<<<< Updated upstream
     mode: 'development',
     devServer: {
         static: path.resolve(__dirname, './dist'),
@@ -21,6 +22,25 @@ module.exports = {
         compress: true,
         port: 8080
     },
+=======
+    {
+      test: /\.css$/,
+      use: [MiniCssExtractPlugin.loader, {
+        loader: 'css-loader',
+        options: {
+          importLoaders: 1
+        }
+      },
+        'postcss-loader'
+    ]
+},
+  
+]
+},
+};
+  
+
+>>>>>>> Stashed changes
     module: {
         rules: [{
             test: /\.js$/,
