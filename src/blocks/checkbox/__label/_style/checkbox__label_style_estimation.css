@@ -1,0 +1,51 @@
+ .checkbox__label_style_estimation {
+    margin: 0;
+    padding: 0;
+    height: 48px;
+    width: 72px;
+    border: 1px solid #048AA7;
+    border-left: none;
+    
+    align-content: center;
+    background-color: #FFF;
+
+}
+
+.checkbox__label_style_estimation::before {
+    background: none;
+    display: block;
+}
+
+.checkbox__label_style_estimation:hover::before {
+    background: none;
+    background-color: #72D0DC;
+   
+    height: 48px;
+    width: 72px;
+}
+
+.checkbox__input:checked+.checkbox__label_style_estimation::before {
+    background: none;
+    background-color: #72D0DC;
+    height: 48px;
+    width: 72px;
+}
+
+.checkbox__input:checked+.checkbox__label_style_estimation::before+.checkbox__text::after{
+    content: '';
+    color: #FFF;
+}
+
+
+.checkbox__input:checked+.checkbox__label_style_estimation:hover::before {
+    background: none;
+}
+
+.checkbox__input:checked:focus+.checkbox__label_style_estimation:hover::before {
+    background: none;
+}
+
+.checkbox__input:disabled+.checkbox__label {
+    opacity: none;
+} 
+

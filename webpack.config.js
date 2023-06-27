@@ -118,6 +118,11 @@ module.exports = {
             template: "./src/estimation-work-volonter.html",
             inject: "body",
         }),
+        new HtmlWebpackPlugin({
+            filename: "estimation-work-fond-estimation.html",
+            template: "./src/estimation-work-fond-estimation.html",
+            inject: "body",
+        }),
         new CleanWebpackPlugin(),
         new MiniCssExtractPlugin(),
     ],

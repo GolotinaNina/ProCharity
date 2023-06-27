@@ -4,7 +4,7 @@
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  font-size: 16px;
+  font-size: 160px;
   font-style: normal;
   font-weight: 400;
   gap: 8px;
@@ -26,22 +26,22 @@
   background: url(../../../images/checkbox-hover.svg) no-repeat center center;
 }
 
-.checkbox__input:focus + .checkbox__label::before {
+.checkbox__input:focus+.checkbox__label::before {
   background: url(../../../images/checkbox-focus.svg) no-repeat center center;
 }
 
-.checkbox__input:checked + .checkbox__label::before {
+.checkbox__input:checked+.checkbox__label::before {
   background: url(../../../images/checkbox-checked.svg) no-repeat center center;
 }
 
-.checkbox__input:checked + .checkbox__label:hover::before {
+.checkbox__input:checked+.checkbox__label:hover::before {
   background: url(../../../images/checkbox-checked-hover.svg) no-repeat center center;
 }
 
-.checkbox__input:checked:focus + .checkbox__label:hover::before {
+.checkbox__input:checked:focus+.checkbox__label:hover::before {
   background: url(../../../images/checkbox-checked-focus.svg) no-repeat center center;
 }
 
-.checkbox__input:disabled + .checkbox__label {
+.checkbox__input:disabled+.checkbox__label {
   opacity: .6;
 }
