@@ -1,0 +1,14 @@
+.btn_field {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 32px;
+}
+
+@media screen and (max-width: 900px) {
+    .btn_field {
+        flex-direction: column;
+        margin: 0 auto;
+        height: 128px;
+    }
+}

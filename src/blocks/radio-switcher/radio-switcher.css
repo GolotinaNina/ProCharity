@@ -8,7 +8,7 @@
   width: 100%;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 796px) {
   .radio-switcher {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
