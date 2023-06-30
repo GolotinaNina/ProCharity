@@ -4,23 +4,23 @@ const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = {
-  entry: {
-    main: './src/index.js',
-    layout: './src/layout.js',
-    content: './src/content.js',
-  },
-  output: {
-    path: path.resolve(__dirname, 'dist'),
-    filename: '[name].js',
-    publicPath: '',
-  },
-  mode: 'development',
-  devServer: {
-    static: path.resolve(__dirname, './dist'),
-    open: true,
-    compress: true,
-    port: 8080
-  },
+    entry: {
+        main: './src/index.js',
+        layout: './src/layout.js',
+        content: './src/content.js',
+    },
+    output: {
+        path: path.resolve(__dirname, 'dist'),
+        filename: '[name].js',
+        publicPath: '',
+    },
+    mode: 'development',
+    devServer: {
+        static: path.resolve(__dirname, './dist'),
+        open: true,
+        compress: true,
+        port: 8080
+    },
     module: {
         rules: [
             {
@@ -123,7 +123,7 @@ module.exports = {
             template: "./src/evaluation-of-volunteer-review.html",
             inject: "body",
         }),
-	    new HtmlWebpackPlugin({
+        new HtmlWebpackPlugin({
             filename: "evaluation-of-the-funds-work-labor-costs.html",
             template: "./src/evaluation-of-the-funds-work-labor-costs.html",
             inject: "body",
@@ -142,6 +142,12 @@ module.exports = {
             filename: 'evaluation-of-the-funds-work-reviews.html',
             template: './src/evaluation-of-the-funds-work-reviews.html',
             inject: 'body'
+        }),
+
+        new HtmlWebpackPlugin({
+            filename: "estimation-work-fond-estimation.html",
+            template: "./src/estimation-work-fond-estimation.html",
+            inject: "body",
         }),
 
         new CleanWebpackPlugin(),
