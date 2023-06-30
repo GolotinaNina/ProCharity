@@ -8,6 +8,7 @@
     width: 350px;
 }
 
+<<<<<<< Updated upstream
 @media screen and (max-width: 1120px) {
     @media screen and (max-width: 796px) {
         .main_estimation_text {
@@ -23,3 +24,26 @@
         }
     }
 }
+=======
+
+ @media screen and (max-width: 1024px) {
+  .main_estimation_text {
+    padding-right: max(10px, calc(32 * (100vw - 796px) / (1024 - 796)));
+  }
+} 
+
+/*@media screen and (max-width: 1120px) {
+  .main_estimation_text {
+    max-width: 550px;
+  }
+}*/
+
+
+@media screen and (max-width: 796px) {  
+  .main_estimation_text {
+   width: 100%;
+  }
+}
+
+
+>>>>>>> Stashed changes

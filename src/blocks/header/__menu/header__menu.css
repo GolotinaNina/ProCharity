@@ -6,12 +6,13 @@
   list-style: none;
   margin: 0;
   padding: 0;
-  width: 100%;
+  width: 553px;
 }
 
 @media screen and (max-width: 1200px) {
   .header__menu {
     gap: 16px;
+    width: 100%;
   }
 }
 

@@ -6,10 +6,20 @@
   gap: 16px;
   list-style: none;
   margin: 0;
-  padding: 20px;
+  padding: 16px;
   width: 100%;
 }
 
+<<<<<<< Updated upstream
+=======
+/* @media screen and (max-width: 1024px) {
+  .sidebar-nav__list {
+    padding-left: max(2px, calc(20 * (100vw - 796px) / (1024 - 796)));
+    padding-right: max(2px, calc(20 * (100vw - 796px) / (1024 - 796)));
+  }
+} */
+
+>>>>>>> Stashed changes
 @media screen and (max-width: 900px) {
   .sidebar-nav__list {
     border: none;
@@ -18,10 +28,15 @@
     gap: 12px;
     justify-content: space-between;
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     padding: 24px 0 8px 0;
 =======
    padding: 20px 0 20px;
     margin: auto;
+    border: none;
+>>>>>>> Stashed changes
+=======
+    padding: 16px 0 0 0;
     border: none;
 >>>>>>> Stashed changes
   }

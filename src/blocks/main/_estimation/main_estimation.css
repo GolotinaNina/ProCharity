@@ -1,0 +1,11 @@
+.main_estimation {
+    width: 736px;
+    /* padding-left: 32px; */
+}
+
+
+@media screen and (max-width: 796px) { /*900px*/
+    .main_estimation {
+        width: 100%;
+    }
+}

@@ -9,3 +9,9 @@
   text-decoration: none;
   width: 168px;
 }
+
+@media screen and (max-width: 796px) {
+  .account-btn__content {
+    width: 100%;
+  }
+}

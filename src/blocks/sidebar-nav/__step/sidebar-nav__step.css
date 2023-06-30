@@ -9,6 +9,15 @@
   width: 32px;
 }
 
+<<<<<<< Updated upstream
+=======
+/* @media screen and (max-width: 1024px) {
+  .sidebar-nav__step {
+    gap: max(0px, calc(12 * (100vw - 796px) / (1024 - 796)));
+  }
+} */
+
+>>>>>>> Stashed changes
 @media screen and (max-width: 900px) {
   .sidebar-nav__step {
     border-radius: 0;
