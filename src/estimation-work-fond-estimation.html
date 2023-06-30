@@ -54,8 +54,8 @@
         </div>
       </div>
     </header>
-    <main class="main main_template_lk">
-      <nav class="breadcrumbs">
+    <main class="main main_template_lk border">
+      <nav class="breadcrumbs border">
         <ul class="breadcrumbs__list">
           <li class="breadcrumbs__item">
             <a href="#" class="breadcrumbs__link">Личный кабинет</a>
@@ -71,7 +71,7 @@
           </li>
         </ul>
       </nav>
-      <section class="sidebar-nav">
+      <section class="sidebar-nav border">
         <ul class="sidebar-nav__list">
           <li class="sidebar-nav__item">
             <div class="sidebar-nav__step sidebar-nav__step_style_lk sidebar-nav__step_hidden"></div>
@@ -105,29 +105,52 @@
       </section>
       <section class="content border">
         <h1 class="heading heading_type_title border">Оценка</h1>
-        <p class="paragraph">Оцени опыт работы с фондом по 5-балльной шкале, где 1 — неудовлетворительно, а
+        <p class="paragraph paragraph_style_padding-bttm-20">Оцени опыт работы с фондом по 5-балльной шкале, где 1 —
+          неудовлетворительно, а
           5 — отлично. Фонд не увидит твою оценку, но она повлияет на его общий рейтинг.</p>
-        </p>
-        <form name="criteria" id="criteria">
-          <fieldset class="fieldset fieldset_template_grid-form border">
 
-            <div class="criteria">
-              <h3 class="criteria__title">Четкость ТЗ</h3>
-              <p class="paragraph">Если фонд не предоставил достаточно информации для качественного
+        <form name="criteria" id="criteria">
+          <fieldset class="fieldset fieldset_template_grid-form">
+
+            <!-- <div class="criteria"> -->
+            <div>
+              <h3 class="heading heading_type_subtitle-estimation">Четкость ТЗ</h3>
+              <p class="paragraph paragraph_style_first-step">Если фонд не предоставил достаточно информации для
+                качественного
                 выполнения задания, поставь более низкую оценку</p>
             </div>
 
-            <div class="rating border">
-              <div class="checkbox">
+
+
+
+            <div class="rating ">
+              <!-- <label class="checkbox__label checkbox__label_style_estimation">
                 <input class="checkbox__input" id="rating_1" type="radio" value="1" name="rating">
-                <label class="checkbox__label checkbox__label_style_estimation" for="rating_1">
-                </label>
-                <span class="checkbox__text">1</span>
-              </div>
+                <span class="checkbox__text" for="rating_1">1</span>
+              </label>
+              <label class="checkbox__label checkbox__label_style_estimation">
+                <input class="checkbox__input" id="rating_1" type="radio" value="1" name="rating">
+                <span class="checkbox__text" for="rating_1">2</span>
+              </label>
+              <label class="checkbox__label checkbox__label_style_estimation">
+                <input class="checkbox__input" id="rating_1" type="radio" value="1" name="rating">
+                <span class="checkbox__text" for="rating_1">3</span>
+              </label>
+              <label class="checkbox__label checkbox__label_style_estimation">
+                <input class="checkbox__input" id="rating_1" type="radio" value="1" name="rating">
+                <span class="checkbox__text" for="rating_1">4</span>
+              </label>
+              <label class="checkbox__label checkbox__label_style_estimation">
+                <input class="checkbox__input" id="rating_1" type="radio" value="1" name="rating">
+                <span class="checkbox__text" for="rating_1">5</span>
+              </label> -->
+
+
+
               <div class="checkbox">
                 <input class="checkbox__input" id="rating_2" type="radio" value="2" name="rating">
                 <label class="checkbox__label checkbox__label_style_estimation" for="rating_2"></label>
-                <span class="checkbox__text">2</span>
+                <span class="checkbox__text" for="rating_2">2</span>
               </div>
               <div class="checkbox">
                 <input class="checkbox__input" id="rating_3" type="radio" value="3" name="rating">
@@ -146,46 +169,15 @@
               </div>
             </div>
 
-
-            <div class="criteria">
-              <h3 class="criteria__title">Оперативность</h3>
-              <p class="paragraph">Если представитель фонда долго не отвечал на сообщения, поставь более низкую оценку
+            <div>
+              <h3 class="heading heading_type_subtitle-estimation">Оперативность</h3>
+              <p class="paragraph paragraph_style_first-step">Если представитель фонда долго не отвечал на сообщения,
+                поставь более низкую оценку
               </p>
             </div>
 
-            <div class="rating ">
-              <div class="checkbox ">
-                <input class="checkbox__input" id="rating_1" type="radio" value="1" name="rating">
-                <label class="checkbox__label checkbox__label_style_estimation" for="rating_1">
-                </label>
-                <span class="checkbox__text">1</span>
-              </div>
-              <div class="checkbox">
-                <input class="checkbox__input" id="rating_2" type="radio" value="2" name="rating">
-                <label class="checkbox__label checkbox__label_style_estimation" for="rating_2"></label>
-                <span class="checkbox__text">2</span>
-              </div>
-              <div class="checkbox">
-                <input class="checkbox__input" id="rating_3" type="radio" value="3" name="rating">
-                <label class="checkbox__label checkbox__label_style_estimation" for="rating_3"></label>
-                <span class="checkbox__text">3</span>
-              </div>
-              <div class="checkbox">
-                <input class="checkbox__input" id="rating_4" type="radio" value="4" name="rating">
-                <label class="checkbox__label checkbox__label_style_estimation" for="rating_4"></label>
-                <span class="checkbox__text">4</span>
-              </div>
-              <div class="checkbox">
-                <input class="checkbox__input" id="rating_5" type="radio" value="5" name="rating">
-                <label class="checkbox__label checkbox__label_style_estimation" for="rating_5"></label>
-                <span class="checkbox__text">5</span>
-              </div>
-            </div>
 
-            <div class="criteria">
-              <h3 class="criteria__title">Вежливость</h3>
-              <p class="paragraph">Насколько представитель фонда был вежлив и приятен в общении?</p>
-            </div>
+
 
             <div class="rating ">
               <div class="checkbox ">
@@ -216,10 +208,13 @@
               </div>
             </div>
 
-            <div class="criteria">
-              <h3 class="criteria__title">Соблюдение договоренностей</h3>
-              <p class="paragraph">Если фонд предлагал выполнить дополнительную работу, поставь более низкую оценку</p>
+            <div>
+              <h3 class="heading heading_type_subtitle-estimation">Вежливость</h3>
+              <p class="paragraph paragraph_style_first-step">Насколько представитель фонда был вежлив и приятен в
+                общении?</p>
             </div>
+
+
 
             <div class="rating ">
               <div class="checkbox ">
@@ -249,14 +244,57 @@
                 <span class="checkbox__text">5</span>
               </div>
             </div>
+
+            <div>
+              <h3 class="heading heading_type_subtitle-estimation">Соблюдение договоренностей</h3>
+              <p class="paragraph paragraph_style_first-step">Если фонд предлагал выполнить дополнительную работу,
+                поставь более низкую оценку</p>
+            </div>
+
+
+
+            <div class="rating ">
+              <div class="checkbox ">
+                <input class="checkbox__input" id="rating_1" type="radio" value="1" name="rating">
+                <label class="checkbox__label checkbox__label_style_estimation" for="rating_1">
+                </label>
+                <span class="checkbox__text">1</span>
+              </div>
+              <div class="checkbox">
+                <input class="checkbox__input" id="rating_2" type="radio" value="2" name="rating">
+                <label class="checkbox__label checkbox__label_style_estimation" for="rating_2"></label>
+                <span class="checkbox__text">2</span>
+              </div>
+              <div class="checkbox">
+                <input class="checkbox__input" id="rating_3" type="radio" value="3" name="rating">
+                <label class="checkbox__label checkbox__label_style_estimation" for="rating_3"></label>
+                <span class="checkbox__text">3</span>
+              </div>
+              <div class="checkbox">
+                <input class="checkbox__input" id="rating_4" type="radio" value="4" name="rating">
+                <label class="checkbox__label checkbox__label_style_estimation" for="rating_4"></label>
+                <span class="checkbox__text">4</span>
+              </div>
+              <div class="checkbox">
+                <input class="checkbox__input" id="rating_5" type="radio" value="5" name="rating">
+                <label class="checkbox__label checkbox__label_style_estimation" for="rating_5"></label>
+                <span class="checkbox__text">5</span>
+              </div>
+            </div>
+            <!--  </div> -->
+            
+
+
+
 
 
           </fieldset>
-          <button>Оценить</button>
-          <button>Отмена</button>
+          <fieldset class="fieldset fieldset_template_grid-form fieldset_style_p-none">
+            <button class="btn btn_style_primary">Оценить</button>
+            <button class="btn btn_style_secondary btn_position_right">Отмена</button>
+          </fieldset>
+
         </form>
-
-
       </section>
     </main>
 

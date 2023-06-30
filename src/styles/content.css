@@ -114,7 +114,7 @@
 @import url(../blocks/heading/_type/heading_type_registrtion.css);
 @import url(../blocks/heading/_type/heading_type_title-desktop.css);
 @import url(../blocks/heading/_type/heading_type_title-mobile.css);
-
+@import url(../blocks/heading/_type/heading_type_subtitle-estimation.css);
 /* Кнопки */
 
 @import url(../blocks/btn/btn.css);
@@ -259,7 +259,10 @@
 @import url(../blocks/checkbox/__label/checkbox__label.css);
 @import url(../blocks/checkbox/__label/_style/checkbox__label_style_notifications.css);
 @import url(../blocks/checkbox/__label/_style/checkbox__label_style_estimation.css); /* TS */
+@import url(../blocks/checkbox/__label/_style/checkbox__label_style_estimation-left.css);
+@import url(../blocks/checkbox/__label/_style/checkbox__label_style_estimation-right.css);
 @import url(../blocks/checkbox/__text/checkbox__text.css);
+
 /*Отображение и изменение аватара*/
 
 @import url(../blocks/avatar/avatar.css);
@@ -314,6 +317,7 @@
 @import url(./../blocks/paragraph/_style/paragraph_style_first-step.css);
 @import url(./../blocks/paragraph/_style/paragraph_style_desktop.css);
 @import url(./../blocks/paragraph/_style/paragraph_style_mobile.css);
+@import url(./../blocks/paragraph/_style/paragraph_style_padding-bttm-20.css); /* TS */
 
 @import url(../blocks/list/list.css);
 @import url(../blocks/list/__item/list__item.css);
@@ -380,3 +384,4 @@
 
 @import url(../blocks/rating/rating.css);
 @import url(../blocks/_border/border.css); /* Удалить*/
+@import url(../blocks/criteria/criteria.css);
