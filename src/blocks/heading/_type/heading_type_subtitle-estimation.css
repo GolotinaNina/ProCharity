@@ -1,0 +1,19 @@
+.heading_type_subtitle-estimation {
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    line-height: 24px;
+    padding-bottom: 4px;
+    padding-top: 20px;
+    grid-column: span 2;
+}
+
+
+@media screen and (max-width: 796px) {
+    .heading_type_subtitle-estimation {
+        font-size: 16px;
+        line-height: 24px;
+        padding-bottom: 12px;
+        grid-column: span 1;
+    }
+}
