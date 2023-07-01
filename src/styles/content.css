@@ -14,6 +14,7 @@
 @import url(../blocks/main/_template/main_template_estimation.css);
 @import url(../blocks/main/_template/main_template_fund.css);
 @import url(../blocks/main/_template/main_template_volunteer.css);
+@import url(../blocks/main/_template/main_template_fond.css);
 
 @import url(../blocks/main/_estimation/main_estimation.css);
 @import url(../blocks/main/_estimation/_warning/main_estimation_warning.css);
@@ -232,6 +233,7 @@
 @import url(../blocks/fieldset/_style/fieldset_style_hours-label.css);
 
 @import url(../blocks/fieldset/_template/fieldset_template_grid-form.css);
+@import url(../blocks/fieldset/_template/fieldset_template_grid-form-estimation.css);
 @import url(../blocks/fieldset/_template/fieldset_template_grid-project-links.css);
 @import url(../blocks/fieldset/_template/fieldset_template_grid-one-col.css);
 @import url(../blocks/fieldset/_template/fieldset_template_grid-social-links.css);
@@ -419,6 +421,6 @@
 @import url(../vendor/cropperjs.css);
 
 
-@import url(../blocks/rating/rating.css);
+/* @import url(../blocks/rating/rating.css); */
 @import url(../blocks/_border/border.css); /* Удалить*/
-@import url(../blocks/criteria/criteria.css);
+/* @import url(../blocks/criteria/criteria.css); */

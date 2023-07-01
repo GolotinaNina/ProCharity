@@ -54,8 +54,8 @@
         </div>
       </div>
     </header>
-    <main class="main main_template_lk border">
-      <nav class="breadcrumbs border">
+    <main class="main main_template_fond">
+      <nav class="breadcrumbs">
         <ul class="breadcrumbs__list">
           <li class="breadcrumbs__item">
             <a href="#" class="breadcrumbs__link">Личный кабинет</a>
@@ -71,28 +71,27 @@
           </li>
         </ul>
       </nav>
-      <section class="sidebar-nav border">
+      <section class="sidebar-nav">
         <ul class="sidebar-nav__list">
-          <li class="sidebar-nav__item">
-            <div class="sidebar-nav__step sidebar-nav__step_style_lk sidebar-nav__step_hidden"></div>
+          <li class="sidebar-nav__item"> <!-- sidebar-nav__item_hidden -->
+            <a href="evaluation-of-the-funds-work-labor-costs.html" class="sidebar-nav__link">
+              <div class="sidebar-nav__step sidebar-nav__step_style_lk sidebar-nav__step_type_selected">
+                <span class="sidebar-nav__step-text"></span>
+                <!--<img src="<%=require('./images/nav-link-check-mark.svg')%>" alt="Галка"> -->
+              </div>
+              <span class="sidebar-nav__item-text">Трудозатраты</span>
+            </a>
           </li>
           <li class="sidebar-nav__item sidebar-nav__item_type_current">
             <div class="sidebar-nav__step sidebar-nav__step_style_lk sidebar-nav__step_type_current">
-              <span class="sidebar-nav__step-text">1</span>
+              <span class="sidebar-nav__step-text">2</span>
             </div>
-            <span class="sidebar-nav__item-text">Трудозатраты</span>
+            <span class="sidebar-nav__item-text">Оценка</span>
           </li>
-          <li class="sidebar-nav__item sidebar-nav__item_hidden">
-            <a href="#" class="sidebar-nav__link">
-              <div class="sidebar-nav__step sidebar-nav__item_type_mobile-hidden">
-                <span class="sidebar-nav__item-text">2</span>
-              </div>
-              <span class="sidebar-nav__item-text">Оценка</span>
-            </a>
-          </li>
-          <li class="sidebar-nav__item sidebar-nav__item_hidden">
-            <a href="#" class="sidebar-nav__link">
-              <div class="sidebar-nav__step sidebar-nav__item_type_mobile-hidden">
+          <li class="sidebar-nav__item">
+            <a href="evaluation-of-the-funds-work-reviews.html" class="sidebar-nav__link">
+              <div class="sidebar-nav__step sidebar-nav__step_type_evaluation">
+                <!--sidebar-nav__item_type_mobile-hidden-->
                 <span class="sidebar-nav__step-text">3</span>
               </div>
               <span class="sidebar-nav__item-text">Отзывы</span>
@@ -100,204 +99,129 @@
           </li>
         </ul>
         <div class="sidebar-nav__description">
-          <p class="sidebar-nav__description-title">Оценка работы волонтера</p>
+          <p class="sidebar-nav__description-title">Оценка работы с фондом</p>
+          <p class="sidebar-nav__description-steps">Шаг 2 из 3</p>
         </div>
       </section>
-      <section class="content border">
-        <h1 class="heading heading_type_title border">Оценка</h1>
+      <section class="content">
+        <h1 class="heading heading_type_title">Оценка</h1>
         <p class="paragraph paragraph_style_padding-bttm-20">Оцени опыт работы с фондом по 5-балльной шкале, где 1 —
           неудовлетворительно, а
           5 — отлично. Фонд не увидит твою оценку, но она повлияет на его общий рейтинг.</p>
 
         <form name="criteria" id="criteria">
-          <fieldset class="fieldset fieldset_template_grid-form">
-
-            <!-- <div class="criteria"> -->
-            <div>
-              <h3 class="heading heading_type_subtitle-estimation">Четкость ТЗ</h3>
-              <p class="paragraph paragraph_style_first-step">Если фонд не предоставил достаточно информации для
-                качественного
-                выполнения задания, поставь более низкую оценку</p>
-            </div>
-
-
-
-
-            <div class="rating ">
-              <!-- <label class="checkbox__label checkbox__label_style_estimation">
-                <input class="checkbox__input" id="rating_1" type="radio" value="1" name="rating">
-                <span class="checkbox__text" for="rating_1">1</span>
+          <fieldset class="fieldset fieldset_template_grid-form-estimation">
+            <h3 class="heading heading_type_subtitle-estimation">Четкость ТЗ</h3>
+            <p class="paragraph paragraph_style_first-step">Если фонд не предоставил достаточно информации для
+              качественного
+              выполнения задания, поставь более низкую оценку</p>
+            <div class="radio-switcher_main">
+              <input type="radio" class="radio-switcher__input" name="professionalism" id="1" value="1">
+              <label for="1" class="radio-switcher__label">
+                1
               </label>
-              <label class="checkbox__label checkbox__label_style_estimation">
-                <input class="checkbox__input" id="rating_1" type="radio" value="1" name="rating">
-                <span class="checkbox__text" for="rating_1">2</span>
+              <input type="radio" class="radio-switcher__input" name="professionalism" id="2" value="2">
+              <label for="2" class="radio-switcher__label">
+                2
               </label>
-              <label class="checkbox__label checkbox__label_style_estimation">
-                <input class="checkbox__input" id="rating_1" type="radio" value="1" name="rating">
-                <span class="checkbox__text" for="rating_1">3</span>
+              <input type="radio" class="radio-switcher__input" name="professionalism" id="3" value="3">
+              <label for="3" class="radio-switcher_main__label">
+                3
               </label>
-              <label class="checkbox__label checkbox__label_style_estimation">
-                <input class="checkbox__input" id="rating_1" type="radio" value="1" name="rating">
-                <span class="checkbox__text" for="rating_1">4</span>
+              <input type="radio" class="radio-switcher__input" name="professionalism" id="4" value="4">
+              <label for="4" class="radio-switcher_main__label">
+                4
               </label>
-              <label class="checkbox__label checkbox__label_style_estimation">
-                <input class="checkbox__input" id="rating_1" type="radio" value="1" name="rating">
-                <span class="checkbox__text" for="rating_1">5</span>
-              </label> -->
-
-
-
-              <div class="checkbox">
-                <input class="checkbox__input" id="rating_2" type="radio" value="2" name="rating">
-                <label class="checkbox__label checkbox__label_style_estimation" for="rating_2"></label>
-                <span class="checkbox__text" for="rating_2">2</span>
-              </div>
-              <div class="checkbox">
-                <input class="checkbox__input" id="rating_3" type="radio" value="3" name="rating">
-                <label class="checkbox__label checkbox__label_style_estimation" for="rating_3"></label>
-                <span class="checkbox__text">3</span>
-              </div>
-              <div class="checkbox">
-                <input class="checkbox__input" id="rating_4" type="radio" value="4" name="rating">
-                <label class="checkbox__label checkbox__label_style_estimation" for="rating_4"></label>
-                <span class="checkbox__text">4</span>
-              </div>
-              <div class="checkbox">
-                <input class="checkbox__input" id="rating_5" type="radio" value="5" name="rating">
-                <label class="checkbox__label checkbox__label_style_estimation" for="rating_5"></label>
-                <span class="checkbox__text">5</span>
-              </div>
+              <input type="radio" class="radio-switcher__input" name="professionalism" id="5" value="5">
+              <label for="5" class="radio-switcher_main__label">
+                5
+              </label>
             </div>
-
-            <div>
-              <h3 class="heading heading_type_subtitle-estimation">Оперативность</h3>
-              <p class="paragraph paragraph_style_first-step">Если представитель фонда долго не отвечал на сообщения,
-                поставь более низкую оценку
-              </p>
+            <h3 class="heading heading_type_subtitle-estimation">Оперативность</h3>
+            <p class="paragraph paragraph_style_first-step">Если представитель фонда долго не отвечал на сообщения,
+              поставь более низкую оценку
+            </p>
+            <div class="radio-switcher_main">
+              <input type="radio" class="radio-switcher__input" name="professionalism" id="1" value="1">
+              <label for="1" class="radio-switcher__label">
+                1
+              </label>
+              <input type="radio" class="radio-switcher__input" name="professionalism" id="2" value="2">
+              <label for="2" class="radio-switcher__label">
+                2
+              </label>
+              <input type="radio" class="radio-switcher__input" name="professionalism" id="3" value="3">
+              <label for="3" class="radio-switcher_main__label">
+                3
+              </label>
+              <input type="radio" class="radio-switcher__input" name="professionalism" id="4" value="4">
+              <label for="4" class="radio-switcher_main__label">
+                4
+              </label>
+              <input type="radio" class="radio-switcher__input" name="professionalism" id="5" value="5">
+              <label for="5" class="radio-switcher_main__label">
+                5
+              </label>
             </div>
-
-
-
-
-            <div class="rating ">
-              <div class="checkbox ">
-                <input class="checkbox__input" id="rating_1" type="radio" value="1" name="rating">
-                <label class="checkbox__label checkbox__label_style_estimation" for="rating_1">
-                </label>
-                <span class="checkbox__text">1</span>
-              </div>
-              <div class="checkbox">
-                <input class="checkbox__input" id="rating_2" type="radio" value="2" name="rating">
-                <label class="checkbox__label checkbox__label_style_estimation" for="rating_2"></label>
-                <span class="checkbox__text">2</span>
-              </div>
-              <div class="checkbox">
-                <input class="checkbox__input" id="rating_3" type="radio" value="3" name="rating">
-                <label class="checkbox__label checkbox__label_style_estimation" for="rating_3"></label>
-                <span class="checkbox__text">3</span>
-              </div>
-              <div class="checkbox">
-                <input class="checkbox__input" id="rating_4" type="radio" value="4" name="rating">
-                <label class="checkbox__label checkbox__label_style_estimation" for="rating_4"></label>
-                <span class="checkbox__text">4</span>
-              </div>
-              <div class="checkbox">
-                <input class="checkbox__input" id="rating_5" type="radio" value="5" name="rating">
-                <label class="checkbox__label checkbox__label_style_estimation" for="rating_5"></label>
-                <span class="checkbox__text">5</span>
-              </div>
+            <h3 class="heading heading_type_subtitle-estimation">Вежливость</h3>
+            <p class="paragraph paragraph_style_first-step">Насколько представитель фонда был вежлив и приятен в
+              общении?</p>
+            <div class="radio-switcher_main">
+              <input type="radio" class="radio-switcher__input" name="professionalism" id="1" value="1">
+              <label for="1" class="radio-switcher__label">
+                1
+              </label>
+              <input type="radio" class="radio-switcher__input" name="professionalism" id="2" value="2">
+              <label for="2" class="radio-switcher__label">
+                2
+              </label>
+              <input type="radio" class="radio-switcher__input" name="professionalism" id="3" value="3">
+              <label for="3" class="radio-switcher_main__label">
+                3
+              </label>
+              <input type="radio" class="radio-switcher__input" name="professionalism" id="4" value="4">
+              <label for="4" class="radio-switcher_main__label">
+                4
+              </label>
+              <input type="radio" class="radio-switcher__input" name="professionalism" id="5" value="5">
+              <label for="5" class="radio-switcher_main__label">
+                5
+              </label>
             </div>
+            <h3 class="heading heading_type_subtitle-estimation">Соблюдение договоренностей</h3>
+            <p class="paragraph paragraph_style_first-step">Если фонд предлагал выполнить дополнительную работу,
+              поставь более низкую оценку</p>
 
-            <div>
-              <h3 class="heading heading_type_subtitle-estimation">Вежливость</h3>
-              <p class="paragraph paragraph_style_first-step">Насколько представитель фонда был вежлив и приятен в
-                общении?</p>
+            <div class="radio-switcher_main">
+              <input type="radio" class="radio-switcher__input" name="professionalism" id="1" value="1">
+              <label for="1" class="radio-switcher__label">
+                1
+              </label>
+              <input type="radio" class="radio-switcher__input" name="professionalism" id="2" value="2">
+              <label for="2" class="radio-switcher__label">
+                2
+              </label>
+              <input type="radio" class="radio-switcher__input" name="professionalism" id="3" value="3">
+              <label for="3" class="radio-switcher_main__label">
+                3
+              </label>
+              <input type="radio" class="radio-switcher__input" name="professionalism" id="4" value="4">
+              <label for="4" class="radio-switcher_main__label">
+                4
+              </label>
+              <input type="radio" class="radio-switcher__input" name="professionalism" id="5" value="5">
+              <label for="5" class="radio-switcher_main__label">
+                5
+              </label>
             </div>
-
-
-
-            <div class="rating ">
-              <div class="checkbox ">
-                <input class="checkbox__input" id="rating_1" type="radio" value="1" name="rating">
-                <label class="checkbox__label checkbox__label_style_estimation" for="rating_1">
-                </label>
-                <span class="checkbox__text">1</span>
-              </div>
-              <div class="checkbox">
-                <input class="checkbox__input" id="rating_2" type="radio" value="2" name="rating">
-                <label class="checkbox__label checkbox__label_style_estimation" for="rating_2"></label>
-                <span class="checkbox__text">2</span>
-              </div>
-              <div class="checkbox">
-                <input class="checkbox__input" id="rating_3" type="radio" value="3" name="rating">
-                <label class="checkbox__label checkbox__label_style_estimation" for="rating_3"></label>
-                <span class="checkbox__text">3</span>
-              </div>
-              <div class="checkbox">
-                <input class="checkbox__input" id="rating_4" type="radio" value="4" name="rating">
-                <label class="checkbox__label checkbox__label_style_estimation" for="rating_4"></label>
-                <span class="checkbox__text">4</span>
-              </div>
-              <div class="checkbox">
-                <input class="checkbox__input" id="rating_5" type="radio" value="5" name="rating">
-                <label class="checkbox__label checkbox__label_style_estimation" for="rating_5"></label>
-                <span class="checkbox__text">5</span>
-              </div>
-            </div>
-
-            <div>
-              <h3 class="heading heading_type_subtitle-estimation">Соблюдение договоренностей</h3>
-              <p class="paragraph paragraph_style_first-step">Если фонд предлагал выполнить дополнительную работу,
-                поставь более низкую оценку</p>
-            </div>
-
-
-
-            <div class="rating ">
-              <div class="checkbox ">
-                <input class="checkbox__input" id="rating_1" type="radio" value="1" name="rating">
-                <label class="checkbox__label checkbox__label_style_estimation" for="rating_1">
-                </label>
-                <span class="checkbox__text">1</span>
-              </div>
-              <div class="checkbox">
-                <input class="checkbox__input" id="rating_2" type="radio" value="2" name="rating">
-                <label class="checkbox__label checkbox__label_style_estimation" for="rating_2"></label>
-                <span class="checkbox__text">2</span>
-              </div>
-              <div class="checkbox">
-                <input class="checkbox__input" id="rating_3" type="radio" value="3" name="rating">
-                <label class="checkbox__label checkbox__label_style_estimation" for="rating_3"></label>
-                <span class="checkbox__text">3</span>
-              </div>
-              <div class="checkbox">
-                <input class="checkbox__input" id="rating_4" type="radio" value="4" name="rating">
-                <label class="checkbox__label checkbox__label_style_estimation" for="rating_4"></label>
-                <span class="checkbox__text">4</span>
-              </div>
-              <div class="checkbox">
-                <input class="checkbox__input" id="rating_5" type="radio" value="5" name="rating">
-                <label class="checkbox__label checkbox__label_style_estimation" for="rating_5"></label>
-                <span class="checkbox__text">5</span>
-              </div>
-            </div>
-            <!--  </div> -->
-            
-
-
-
-
-
           </fieldset>
           <fieldset class="fieldset fieldset_template_grid-form fieldset_style_p-none">
             <button class="btn btn_style_primary">Оценить</button>
             <button class="btn btn_style_secondary btn_position_right">Отмена</button>
           </fieldset>
-
         </form>
       </section>
     </main>
-
     <footer class="footer">
       <nav class="footer__menu">
         <div class="footer__menu-chapter">
