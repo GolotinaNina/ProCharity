@@ -145,10 +145,23 @@ module.exports = {
         }),
 
         new HtmlWebpackPlugin({
+            filename: "evaluation-of-the-funds-work-labor-costs.html",
+            template: "./src/evaluation-of-the-funds-work-labor-costs.html",
+            inject: "body",
+        }),
+        new HtmlWebpackPlugin({
+            filename: "rate_fund-review.html",
+            template: "./src/rate_fund-review.html",
+            inject: "body",
+        }),
+
+
+        new HtmlWebpackPlugin({
             filename: "estimation-work-fond-estimation.html",
             template: "./src/estimation-work-fond-estimation.html",
             inject: "body",
         }),
+
 
         new CleanWebpackPlugin(),
         new MiniCssExtractPlugin(),
