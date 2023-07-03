@@ -5,13 +5,22 @@
     margin-top: 32px;
     border-top: 1px solid;
     border-color: rgba(220, 220, 220, .5);
+<<<<<<< Updated upstream
     min-height: 128px;
+=======
+    margin: 0 auto;
+>>>>>>> Stashed changes
 }
 
 @media screen and (max-width: 900px) {
     .btn_field_add {
         flex-direction: column;
+<<<<<<< Updated upstream
         margin-top: 0;
         margin-right: auto;
+=======
+        width: 100%;
+        padding-top: 32px;
+>>>>>>> Stashed changes
     }
 }
