@@ -1,5 +1,5 @@
 .menu-icon {
-  background: url(../../images/menu.svg) no-repeat center center;
+  background: url(../../images/menu.svg) no-repeat;
   background-size: contain;
   border: none;
   cursor: pointer;

@@ -14,8 +14,12 @@
   
   @media screen and (max-width: 900px) {
     .account-btn__task {
-      height: 32px;
       justify-self: right;
+<<<<<<< Updated upstream
       width: min-content;
+=======
+      max-width: min-content;
+      width: 100%;
+>>>>>>> Stashed changes
     }
   }

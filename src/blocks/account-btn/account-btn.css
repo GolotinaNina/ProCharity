@@ -16,5 +16,6 @@
     height: 32px;
     justify-self: right;
     max-width: min-content;
+    width: 150px;
   }
 }
