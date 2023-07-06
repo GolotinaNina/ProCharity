@@ -4,13 +4,13 @@
   display: flex;
   justify-content: center;
   min-height: 136px;
-  min-width: 350px;
+  min-width: 300px;
   padding: 0 24px;
   position: relative;
   width: 100%;
 }
 
-@media screen and (max-width: 796px) {
+@media screen and (max-width: 900px) {
   .header {
     min-height: 56px;
   }

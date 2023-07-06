@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="author" content="Группа 24">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap" rel="stylesheet">
   <title>ProCharity - Оценка работы волонтера - Отзывы</title>
 </head>
 
@@ -14,7 +15,7 @@
     <div class="header__wrap">
       <button class="menu-icon" type="button"></button>
       <a href="https://procharity.ru/">
-        <img src="<%=require('./images/logo.svg')%>" alt="ProCharity" class="main-logo">
+        <img src="<%=require('./images/logo.svg')%>" alt="Логотип" class="main-logo">
       </a>
       <nav class="header__nav">
         <ul class="header__menu">
@@ -64,34 +65,32 @@
         </li>
       </ul>
     </nav>
-    <section class="sidebar-nav">
+    <div class="sidebar-nav sidebar-nav__style_evaluation">
       <ul class="sidebar-nav__list">
         <li class="sidebar-nav__item">
           <a href="evaluation-of-volunteer-rate.html" class="sidebar-nav__link">
-            <div class="sidebar-nav__step sidebar-nav__step_style_lk sidebar-nav__step_type_selected">
+            <div class="sidebar-nav__step sidebar-nav__step_style_volunteer sidebar-nav__step_type_selected">
               <span class="sidebar-nav__step-text"></span>
             </div>
             <span class="sidebar-nav__item-text">Оценка</span>
           </a>
         </li>
         <li class="sidebar-nav__item">
-
-          <div class="sidebar-nav__step sidebar-nav__step_style_lk sidebar-nav__step_type_current">
+          <div class="sidebar-nav__step sidebar-nav__step_style_volunteer sidebar-nav__step_type_current">
             <span class="sidebar-nav__step-text">2</span>
           </div>
           <span class="sidebar-nav__item-text sidebar-nav__item_type_current">Отзывы</span>
-
         </li>
       </ul>
       <div class="sidebar-nav__description">
         <p class="sidebar-nav__description-title">Оценка работы волонтера</p>
         <p class="sidebar-nav__description-steps">Шаг 2 из 2</p>
       </div>
-    </section>
+    </div>
     <section class="content">
       <h1 class=" heading heading_type_title">Отзывы</h1>
       <form name="motivationsForm" id="motivationsForm" action="lk-portfolio.html" method="get">
-        <fieldset class="fieldset">
+        <fieldset id="fieldse" class="fieldset">
           <p class="paragraph">Публичный отзыв увидят все посетители сайта</p>
           <div class="textarea">
             <textarea class="textarea__field textarea__field_autosize" name="why-am-i-here" id="why-am-i-here"
@@ -101,9 +100,10 @@
             <div class="textarea__counter">
               <span class="textarea__count-symbols">0</span>/<span class="textarea__total-symbols">0</span>
             </div>
+            <p class="textarea textarea__error-message"></p>
           </div>
         </fieldset>
-        <fieldset class="fieldset">
+        <fieldset id="field" class="fieldset">
           <p class="paragraph">Если вас что-то не устроило в работе по заданию, вы можете оставить непубличный отзыв,
             который увидит только администрация сайта. Это поможет нам объективно оценить качество работы волонтера.</p>
           <div class="textarea">
@@ -114,6 +114,7 @@
             <div class="textarea__counter">
               <span class="textarea__count-symbols">0</span>/<span class="textarea__total-symbols">0</span>
             </div>
+            <p class="textarea textarea__error-message"></p>
           </div>
         </fieldset>
         <fieldset class="fieldset fieldset_template_grid-form fieldset_style_p-none">
