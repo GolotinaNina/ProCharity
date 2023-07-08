@@ -2,8 +2,8 @@
   display: flex;
   flex-direction: row;
   width: auto;
+  max-height: 96px;
 }
-
 
 @media screen and (max-width: 900px) {
   .main_estimation_choose_row {

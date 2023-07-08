@@ -1,15 +1,15 @@
 .main_estimation_choose {
     display: flex;
-    flex-direction: column;    
+    flex-direction: column;
 }
 
 .main_estimation_choose:first-of-type {
-    margin-top: 24px;
+    margin: 24px 0 20px;
 }
 
-@media screen and (max-width: 900px) { 
+@media screen and (max-width: 900px) {
     .main_estimation_choose {
-    width: 100%;
-    margin: 0 auto;
+        width: 100%;
+        margin: 0 auto;
     }
 }

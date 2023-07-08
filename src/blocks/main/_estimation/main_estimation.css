@@ -2,7 +2,6 @@
     max-width: 736px;
 }
 
-
 @media screen and (max-width: 900px) { 
     .main_estimation {
         width: 100%;   

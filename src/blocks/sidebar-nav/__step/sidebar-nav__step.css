@@ -3,7 +3,6 @@
   background-color: #F5F6F8;
   border-radius: 50%;
   display: flex;
-  font-weight: 400;
   height: 32px;
   justify-content: center;
   width: 32px;
@@ -22,6 +21,5 @@
     height: 100%;
     width: 100%;
     background-color: #72D0DC;
-    /* gap: 12px; */
   }
 }
