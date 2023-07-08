@@ -35,6 +35,7 @@
   .btn_style_primary {
     margin: 0 auto;
     max-width: 100%;
+    width: 100%;
     order: 0;
   }
 }

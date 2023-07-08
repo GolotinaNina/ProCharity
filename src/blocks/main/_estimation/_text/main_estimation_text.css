@@ -20,6 +20,7 @@
 
 @media screen and (max-width: 900px) {
   .main_estimation_text {
+    padding-bottom: 12px;
     max-width: 100%;
   }
 } 

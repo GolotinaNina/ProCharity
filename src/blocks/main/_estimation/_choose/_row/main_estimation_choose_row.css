@@ -5,6 +5,12 @@
   max-height: 96px;
 }
 
+@media screen and (max-width: 1050px) {
+  .main_estimation_choose_row {
+  max-height: auto;
+  }
+}
+
 @media screen and (max-width: 900px) {
   .main_estimation_choose_row {
     flex-direction: column;
