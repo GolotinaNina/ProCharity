@@ -11,6 +11,10 @@
   position: relative;
 }
 
+.fieldset_template_hours:first-of-type {
+  padding-bottom: 0;
+}
+
 @media screen and (max-width: 900px) {
 .fieldset_template_hours:first-of-type {
     width: 100%;
