@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="author" content="Группа 24">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap" rel="stylesheet">
   <title>ProCharity - Оценка работы волонтера - Отзывы</title>
 </head>
 
@@ -40,15 +41,16 @@
       </nav>
       <button class="search" type="button"></button>
       <div class="account-сontent">
-        <a href="#" class="account-btn__task">
-          <div class="account-btn__content account-btn__content_type_lk">
-            <span class="account-btn__text">Создать задачу</span>
+        <a href="#" class="account-сontent__task">
+          <div class="account-сontent__content account-сontent__content_type_lk">
+            <span class="account-сontent__text">Создать задачу</span>
           </div>
         </a>
-        <div class="account-btn__avatar">
-          <img src="<%=require('./images/btn-avatar.svg')%>" class="account-btn__img" alt="Личный кабинет">
+        <div class="account-сontent__avatar">
+          <img src="<%=require('./images/btn-avatar.svg')%>" class="account-сontent__img" alt="Личный кабинет">
         </div>
       </div>
+    </div>
     </div>
   </header>
   <main class="main main_template_volunteer">
@@ -64,7 +66,7 @@
         </li>
       </ul>
     </nav>
-    <div class="sidebar-nav sidebar-nav__style_evaluation">
+    <div class="sidebar-nav">
       <ul class="sidebar-nav__list">
         <li class="sidebar-nav__item">
           <a href="evaluation-of-volunteer-rate.html" class="sidebar-nav__link">
@@ -78,7 +80,7 @@
           <div class="sidebar-nav__step sidebar-nav__step_style_volunteer sidebar-nav__step_type_current">
             <span class="sidebar-nav__step-text">2</span>
           </div>
-          <span class="sidebar-nav__item-text sidebar-nav__item_type_current">Отзывы</span>
+          <span class="sidebar-nav__item-text">Отзывы</span>
         </li>
       </ul>
       <div class="sidebar-nav__description">
@@ -99,15 +101,13 @@
             <div class="textarea__counter">
               <span class="textarea__count-symbols">0</span>/<span class="textarea__total-symbols">0</span>
             </div>
-            <p class="textarea textarea__error-message"></p>
+            <p class="textarea__error-message"></p>
           </div>
         </fieldset>
         <fieldset id="field" class="fieldset">
           <p class="paragraph paragraph_style_desktop">Если вас что-то не устроило в работе по заданию, вы можете оставить 
              непубличный отзыв, который увидит только администрация сайта. Это поможет нам объективно
              оценить качество работы волонтера.</p>
-          <p class="paragraph paragraph_style_mobile">Если вы не хотите публиковать негативный отзыв, можете написать его в этом 
-             поле &mdash; непубличный отзыв увидит только администрация сайта</p>  
           <div class="textarea">
             <textarea class="textarea__field textarea__field_autosize" name="skills" id="skills" maxlength="2000"
               required placeholder="Непубличный отзыв"></textarea>
@@ -116,7 +116,7 @@
             <div class="textarea__counter">
               <span class="textarea__count-symbols">0</span>/<span class="textarea__total-symbols">0</span>
             </div>
-            <p class="textarea textarea__error-message"></p>
+            <p class="textarea__error-message"></p>
           </div>
         </fieldset>
         <fieldset class="fieldset fieldset_template_grid-form fieldset_style_p-none">
