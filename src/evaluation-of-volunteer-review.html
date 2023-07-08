@@ -41,15 +41,16 @@
       </nav>
       <button class="search" type="button"></button>
       <div class="account-сontent">
-        <a href="#" class="account-btn__task">
-          <div class="account-btn__content account-btn__content_type_lk">
-            <span class="account-btn__text">Создать задачу</span>
+        <a href="#" class="account-сontent__task">
+          <div class="account-сontent__content account-сontent__content_type_lk">
+            <span class="account-сontent__text">Создать задачу</span>
           </div>
         </a>
-        <div class="account-btn__avatar">
-          <img src="<%=require('./images/btn-avatar.svg')%>" class="account-btn__img" alt="Личный кабинет">
+        <div class="account-сontent__avatar">
+          <img src="<%=require('./images/btn-avatar.svg')%>" class="account-сontent__img" alt="Личный кабинет">
         </div>
       </div>
+    </div>
     </div>
   </header>
   <main class="main main_template_volunteer">
@@ -65,7 +66,7 @@
         </li>
       </ul>
     </nav>
-    <div class="sidebar-nav sidebar-nav__style_evaluation">
+    <div class="sidebar-nav">
       <ul class="sidebar-nav__list">
         <li class="sidebar-nav__item">
           <a href="evaluation-of-volunteer-rate.html" class="sidebar-nav__link">
@@ -79,7 +80,7 @@
           <div class="sidebar-nav__step sidebar-nav__step_style_volunteer sidebar-nav__step_type_current">
             <span class="sidebar-nav__step-text">2</span>
           </div>
-          <span class="sidebar-nav__item-text sidebar-nav__item_type_current">Отзывы</span>
+          <span class="sidebar-nav__item-text">Отзывы</span>
         </li>
       </ul>
       <div class="sidebar-nav__description">
@@ -100,11 +101,11 @@
             <div class="textarea__counter">
               <span class="textarea__count-symbols">0</span>/<span class="textarea__total-symbols">0</span>
             </div>
-            <p class="textarea textarea__error-message"></p>
+            <p class="textarea__error-message"></p>
           </div>
         </fieldset>
         <fieldset id="field" class="fieldset">
-          <p class="paragraph">Если Вы не хотите публиковать негативный отзыв, можете написать его в этом 
+          <p class="paragraph">Если Вы не хотите публиковать негативный отзыв, можете написать его в этом
             поле &mdash; непубличный отзыв увидит только администрация сайта</p>
           <div class="textarea">
             <textarea class="textarea__field textarea__field_autosize" name="skills" id="skills" maxlength="2000"
@@ -114,7 +115,7 @@
             <div class="textarea__counter">
               <span class="textarea__count-symbols">0</span>/<span class="textarea__total-symbols">0</span>
             </div>
-            <p class="textarea textarea__error-message"></p>
+            <p class="textarea__error-message"></p>
           </div>
         </fieldset>
         <fieldset class="fieldset fieldset_template_grid-form fieldset_style_p-none">
